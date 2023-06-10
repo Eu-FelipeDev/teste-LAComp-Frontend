@@ -1,0 +1,60 @@
+<!-- uso do ng if para posicionar os resultados  conforme o a resposta da API -->
+<div class="container">
+  <div class="upper-data">
+    <img src="../../assets/back.png" alt="background" *ngIf='!resultFound()'>
+    <div class="wheather-data" *ngIf='!resultFound()'>
+      <div class="s">
+        <span>Erro ao obter dados.<br>atualize a pagina e tente novamente.</span>
+      </div>
+    </div>
+    <div class="wheather-data" *ngIf='resultFound()'>
+      <div class="location">{{currentWeather.name}}</div>
+      <div class="date">{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</div>
+      <div class="temperature">{{currentWeather.weather[0].description}}</div>
+      <img src="https://openweathermap.org/img/wn/{{currentWeather.weather[0].icon}}@4x.png" alt="icon">
+
+    </div>
+
+  </div>
+  <div class="lower-data" *ngIf='resultFound()'>
+
+    <div class="info-container">
+        <div class="info-block-top">
+          <div class="info-block-lb">Mínima: </div>
+          <div class="info-value">{{currentWeather.main?.temp_min - 273.15 | number:'1.0-0'}}<span><sup>o</sup>C</span></div>
+        </div>
+        <div class="info-block-top">
+          <div class="info-block-lb">Máxima: </div>
+          <div class="info-value">{{currentWeather.main?.temp_max - 273.15 | number:'1.0-0'}}<span><sup>o</sup>C</span></div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-lb">Sensação: </div>
+          <div class="info-value">{{currentWeather.main?.feels_like - 273.15 | number:'1.0-0'}}<span><sup>o</sup>C</span></div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-lb">Nuvens:</div>
+          <div class="info-value">{{currentWeather.clouds?.all}}<span>%</span></div>
+        </div>
+        <div class="info-block-bot">
+          <div class="info-block-lb">Umidade: </div>
+          <div class="info-value">{{currentWeather.main?.humidity}}<span>%</span></div>
+        </div>
+        <div class="info-block-bot">
+          <div class="info-block-lb">ventos:</div>
+          <div class="info-value">{{currentWeather.wind?.speed}}<span>km/h</span></div>
+        </div>
+      </div>
+        <div class="search-info">
+          <form (ngSubmit)="search(searchForm)" #searchForm='ngForm'class="search">
+              
+            <input class="input" placeholder='{{currentWeather.name}}' [(ngModel)]='loc'
+              #lo='ngModel' name='lo' required type="text" autocomplete="off">
+            <div class="error" *ngIf="lo.invalid || lo.touched">
+              <div *ngIf="lo.errors?.['required']">Digite a Cidade</div>
+              </div>
+                
+           <div class="justify-content-center"> <button mat-raised-button type="submit">Alterar</button></div>
+            
+          </form>
+        </div>
+    </div>
