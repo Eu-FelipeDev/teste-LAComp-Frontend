@@ -28,7 +28,8 @@ To run this project, you will need to add the following environment variables to
     
 ## Preview
 
-![image](https://github.com/Eu-FelipeDev/teste-LAComp-Frontend/assets/128178415/f782fbac-a777-42fe-b009-dd1620db43ad)
+![image](https://github.com/Eu-FelipeDev/teste-LAComp-Frontend/assets/128178415/44784864-31a0-4907-878e-d33eb581a5d3)
+
 ![image](https://github.com/Eu-FelipeDev/teste-LAComp-Frontend/assets/128178415/d3111a33-8395-48b5-a9a9-ffa06707d87c)
 
 
