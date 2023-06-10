@@ -9,7 +9,7 @@
     </div>
     <div class="wheather-data" *ngIf='resultFound()'>
       <div class="location">{{currentWeather.name}}</div>
-      <div class="date">{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</div>
+      <div class="date">{{currentWeather.main?.temp | number:'1.1-1'}}<sup>o</sup>C</div>
       <div class="temperature">{{currentWeather.weather[0].description}}</div>
       <img src="https://openweathermap.org/img/wn/{{currentWeather.weather[0].icon}}@4x.png" alt="icon">
 
@@ -21,15 +21,15 @@
     <div class="info-container">
         <div class="info-block-top">
           <div class="info-block-lb">Mínima: </div>
-          <div class="info-value">{{currentWeather.main?.temp_min - 273.15 | number:'1.0-0'}}<span><sup>o</sup>C</span></div>
+          <div class="info-value">{{currentWeather.main?.temp_min | number:'1.1-1'}}<span><sup>o</sup>C</span></div>
         </div>
         <div class="info-block-top">
           <div class="info-block-lb">Máxima: </div>
-          <div class="info-value">{{currentWeather.main?.temp_max - 273.15 | number:'1.0-0'}}<span><sup>o</sup>C</span></div>
+          <div class="info-value">{{currentWeather.main?.temp_max | number:'1.1-1'}}<span><sup>o</sup>C</span></div>
         </div>
         <div class="info-block">
           <div class="info-block-lb">Sensação: </div>
-          <div class="info-value">{{currentWeather.main?.feels_like - 273.15 | number:'1.0-0'}}<span><sup>o</sup>C</span></div>
+          <div class="info-value">{{currentWeather.main?.feels_like | number:'1.1-1'}}<span><sup>o</sup>C</span></div>
         </div>
         <div class="info-block">
           <div class="info-block-lb">Nuvens:</div>
@@ -41,7 +41,7 @@
         </div>
         <div class="info-block-bot">
           <div class="info-block-lb">ventos:</div>
-          <div class="info-value">{{currentWeather.wind?.speed}}<span>km/h</span></div>
+          <div class="info-value">{{currentWeather.wind?.speed * 3.6}}<span>km/h</span></div>
         </div>
       </div>
         <div class="search-info">

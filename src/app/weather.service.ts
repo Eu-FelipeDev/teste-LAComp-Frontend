@@ -12,7 +12,7 @@ export class WeatherService {
    * da API, e a chave obtida no openWeather
    */
   getCurrentWeather(loc: string) {
-    return this.http.get(`${environment.apiUrl}/weather?q=${loc}&lang=pt_br&appid=${environment.apiKey}`)
+    return this.http.get(`${environment.apiUrl}/weather?q=${loc}&lang=pt_br&units=metric&appid=${environment.apiKey}`)
   }
 
 }
