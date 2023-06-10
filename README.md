@@ -1,8 +1,9 @@
 
 # Desafio Frontend - LAComp Ufal
 
-Um webapp de dados e previsão do tempo em Angular
+Um webapp de dados e previsão do tempo em Angular v16
 
+-ReadMe Em Edição
 
 
 
