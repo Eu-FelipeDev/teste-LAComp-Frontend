@@ -12,7 +12,7 @@ Este é um site desenvolvido com Angular V16 que utiliza a API OpenWeatherAPI pa
 - Clone este repositório em sua máquina local.
 - Certifique-se de ter o Angular CLI instalado.
 - Obtenha uma chave de API gratuita da OpenWeatherAPI.
-- mude as variáveis  de environment:
+- Mude as variáveis  de environment:
 
 ####  Environment Variables
 
