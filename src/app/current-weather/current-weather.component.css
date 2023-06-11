@@ -1,149 +1,142 @@
 .container {
-    width: 400px;
-    height: 80vh;
-    background-color: #107CDF;
-    border-radius: 20px;
-  
-  }
-  
-  .upper-data {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-  
-  .upper-data img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .lower-data {
-    color: var(--white);
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50%;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .wheather-data {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 400px;
+  height: 80vh;
+  background-color: #107CDF;
+  border-radius: 20px;
 
-  .wheather-data img {
-    width: 120px;
-    height: 120px;
-    position: relative;
-  }
-  
-  .search {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  
-  }
-  
-  .error {
-    color: #ffffff;
-    font-size: 1.0rem;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  .location {
-    width: 200%;
-    color: var(--white);
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  
-  .temperature {
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 900;
-    text-align: center;
-  }
-  
-  .date {
-    color: var(--white);
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 900;
-  }
-  
-  
-  .s{
-      justify-content: center;
-      align-items: center;
-    text-align: center;
-    margin-top: 300px;
+}
+
+.upper-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.upper-data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lower-data {
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.wheather-data {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheather-data img {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.search {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.error {
+  color: #ffffff;
+  font-size: 1.0rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.location {
+  width: 200%;
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.temperature {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.date {
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+
+.s {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 300px;
 }
 
 .s span {
-    font-size: 1.1em;
-    color: var(--white);
-    font-weight: 900;
+  font-size: 1.1em;
+  color: var(--white);
+  font-weight: 900;
 
 }
 
 .input {
-    position: relative;
-    color: #ffffff;
-    background-color: var(--shadow-dark);
-    border: none;
-    border-bottom: 1px solid var(--white);
-    width: 99%;
-    height: 29px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  textarea:focus, input:focus {
-      box-shadow: 0 0 0 0;
-      outline: 0;
-    }
-    
-  .justify-content-center {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 5px;
+  position: relative;
+  color: #ffffff;
+  background-color: var(--shadow-dark);
+  border: none;
+  border-bottom: 1px solid var(--white);
+  width: 99%;
+  height: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
-  
-  .mat-button {
-    width: 100%;
-    height: 100%;
-    background-color: var(--blue-1);
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: 900;
-    border-radius: 20px;
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.justify-content-center {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 .info {
@@ -165,58 +158,59 @@
 
 }
 
-  .info-block {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1em;
+.info-block {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
 
-  }
+}
 
-  .info-block-top {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 2em;
-    margin-bottom: 1em;
+.info-block-top {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-bottom: 1em;
 
-  }
+}
 
-  .info-block-bot {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
+.info-block-bot {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
 
-  }
-  
-  .info-block-lb {
-    width: 50%;
-    display: flex;
-    margin-left: 15px;
-  }
-  
-  
-  .info-value {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--white);
-    font-weight: 900;
-    font-size: 1rem;
-    margin-left: 5px;
-    margin-right: 15px;
-  }
-  .info-value span {
-    color: var(--white);
-    font-size: 0.8rem;
-    margin-left: 4px;
-    margin-right: 15px;
-  }
+}
 
-  .search-info {
-    align-self: center;
-    margin-top: 30px;
-    width: 50%;
-  }
+.info-block-lb {
+  width: 50%;
+  display: flex;
+  margin-left: 15px;
+}
+
+
+.info-value {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 1rem;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.info-value span {
+  color: var(--white);
+  font-size: 0.8rem;
+  margin-left: 4px;
+  margin-right: 15px;
+}
+
+.search-info {
+  align-self: center;
+  margin-top: 30px;
+  width: 50%;
+}
