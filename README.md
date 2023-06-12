@@ -3,9 +3,12 @@
 
 ``ReadMe Em Edição``
 
-![Angular](	https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) ![Angular](	https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Angular](	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Angular](	https://img.shields.io/badge/TypeScript-F7DF1E?style=for-the-badge&logo=typescript&logoColor=black) 
+![Angular](	https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) ![Angular](	https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Angular](	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Angular](	https://img.shields.io/badge/TypeScript-F7DF1E?style=for-the-badge&logo=typescript&logoColor=black) ![github](https://img.shields.io/badge/GitHub%20pages-100000?style=for-the-badge&logo=github&logoColor=white)  
 
 Este é um site desenvolvido com Angular V16 que utiliza a API OpenWeatherAPI para exibir informações sobre o tempo. Com base na cidade escolhida,  dados atualizados sobre temperatura atual, mínima, máxima e sensação térmica, umidade, velocidade do vento e condições climáticas.
+
+
+- [Live Preview](https://liracode.github.io/teste-LAComp-Frontend/)
 
 ## Instalação 
 
@@ -58,7 +61,8 @@ ou
 
 
 
-## Preview
+## Images
+
 
 ![image](https://github.com/Eu-FelipeDev/teste-LAComp-Frontend/assets/128178415/44784864-31a0-4907-878e-d33eb581a5d3)
 
